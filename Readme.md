@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Кубышкин](https://up.htmlacademy.ru/htmlcss/31/user/1801333).
-* Наставник: `Неизвестно`.
+* Наставник: [Vasilika Klimova](https://htmlacademy.ru/profile/id415397).
 
 ---
 
