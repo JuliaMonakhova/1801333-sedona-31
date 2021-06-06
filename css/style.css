@@ -21,7 +21,18 @@ body {
   font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);}
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;}
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
 
   section {
@@ -29,8 +40,7 @@ body {
   }
 
   .welcome-block {
-    flex-direction: column;
-    background: #888888;
+    background-color: transparent;
     background-image: url("img/background_photo.png");
     background-repeat: no-repeat;
     background-position: center;
