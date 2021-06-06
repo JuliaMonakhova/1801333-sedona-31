@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона-Главная</title>
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href=https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <a href="index.html"><img src="img/header_logo.png" width="138" height="70" alt="Лого"></a>
-    <nav>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-navigation" href="index.html"><img src="img/header_logo.png" width="138" height="70" alt="Лого"></a>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a>Информация</a></li>
+        <li><a>Фото и видео</a></li>
+        <li><a>Карта штата</a></li>
+        <li><a class="catalog-link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
-    <img src="sedonа.svg" width="1200" height="509" alt="главная картинка сайта">
   </header>
 
-  <main>
+  <main class="container">
+    <section class="welcome-block">
+      <img class="welcome-title" src="img/welcome.png" alt="Welcome to gorgeous sedona" width="458" height="352" />
+      <img class="welcome-block-bottom" src="img/shape.png" width="1200" height="57" alt="" />
+    </section>
     <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
     <p>
-    <section>
+    <section class="real_town">
       <h2>Настоящий<br> городок</h2>
       <span>&ndash; №1 &ndash;</span>
       <p>Седона &ndash; не аттракцион для туристов,<br>
         там течет своя жизнь</p>
       <img src="img/real_town.jpg" alt="Настоящий городок" width="800" height="256" />
     </section>
-    <section>
+    <section class="recommendations-1">
       <h2>Жилье</h2>
       <p>Рекомендуем пожить в настоящем<br>
         мотеле, все как в кино!</p>
@@ -43,14 +49,14 @@
       <p>Не только китайского, но и местного<br>
         производства!</p>
     </section>
-    <section>
+    <section class="devils-bridge">
       <img src="img/devils-bridge.jpg" alt="Мост дьявола" width="800" height="256" />
       <h2>Там есть<br>
         мост дьявола</h2>
       <span>&ndash; №2 &ndash;</span>
       <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
     </section>
-    <section>
+    <section class="recommendations-2">
       <h2>Небольшая<br>
         площадь</h2>
       <span>&ndash; №3 &ndash;</span>
@@ -67,26 +73,48 @@
       <p>Большинство едет в гранд-каньон и<br>
         толпится там</p>
     </section>
-    <section>
+    <section class="hotel-search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br />
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a href="#">Поиск гостиницы в Седоне</a>
+      <a class="button button-hotel-search-form" href="#">Поиск гостиницы в Седоне</a>
+      <form class="hotel-search-form">
+        <label>
+          Дата заезда:
+          <a href="#"><span></span></a>
+        </label>
+        <input type="text" name="date-of-entry" value="24 апреля 2016" id="date-of-entry">
+        <label>
+          Дата выезда:
+          <a href="#">
+            <span"></span>
+          </a>
+        </label>
+        <input type="text" name="date-of-departure" value="4 июля 2016" id="date-of-departure">
+        <label>Взрослые:</label>
+        <button class="button"><span></span></button>
+        <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
+        <label>Дети:</label>
+        <button class="button"><span></span></button>
+        <input type="text" name="amount-of-children" value="0" id="amount-of-children">
+        <button class="button">Найти</button>
+      </form>
     </section>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-sedona-hashtag">
         <span>#visitsedona</span><br>
-        <span>+7 800 555-86-28</span>
+        <a class="footer-phone" href="tel: +78005558628">+7 800 555-86-28</a>
       </section>
-      <section>
+      <section class="footer-social">
         <ul>
-          <li><a href="https://twitter.com/">Twitter</a></li>
-          <li><a href="https://www.facebook.com/">Facebook</a></li>
-          <li><a href="https://www.youtube.com/">YouTube</a></li>
+          <li><a class="social-button" href="https://twitter.com/">Twitter</a></li>
+          <li><a class="social-button" href="https://www.facebook.com/">Facebook</a></li>
+          <li><a class="social-button" href="https://www.youtube.com/">YouTube</a></li>
         </ul>
       </section>
-      <section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+      <section class="footer-copyright">
+        <span>Website by</span>
+        <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/"></a>
       </section>
     </footer>
   </main>

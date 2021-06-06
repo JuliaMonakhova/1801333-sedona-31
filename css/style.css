@@ -1,0 +1,38 @@
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --basic-blue: #81B3D3;
+  --basic-black: #000000;
+  --basic-brown: #766357;
+  --basic-light-brown: #766458;
+  --basic-grey: #888888;
+
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);}
+
+
+  section {
+    width: 1200px;
+  }
+
+  .welcome-block {
+    flex-direction: column;
+    background: #888888;
+    background-image: url("img/background_photo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+     }
+
